@@ -7,6 +7,18 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+/* mychnage */
+main{
+  margin: auto;
+  /* display: flex; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f2f4f8;
@@ -172,6 +184,7 @@ form{
   .pageHeader {
     font-size: 3rem;
 }
+
 }
 
 .navbar {
@@ -672,6 +685,7 @@ form{
   display: flex;
   justify-content: space-between;
   max-width: 500px;
+  width: 100%;
 }
 
 .personalDetailsText {
@@ -689,7 +703,7 @@ form{
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.2);
-  max-width: 500px;
+  max-width: 500px;    width: 100%;
 }
 
 .profileDetails {
