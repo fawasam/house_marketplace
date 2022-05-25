@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Explore from './pages/Explore'
 import Profile from './pages/Profile'
 import SignIn from './pages/SignIn'
@@ -21,6 +23,10 @@ function App() {
         <Route path='/forgot-password' element={<ForgotPassword/>}/>
       </Routes>
         <Navbar/>
+      <ToastContainer
+      // position="top-center"
+      autoClose={3000}
+      />
       </BrowserRouter>
     </div>
   );

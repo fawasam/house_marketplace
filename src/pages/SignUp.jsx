@@ -46,7 +46,7 @@ const SignUp = () => {
 
       navigate('/')
     } catch (error) {
-      toast.error('Bad User Credentials')
+      toast.error('Wrong User Credentials')
     }
   }
 
