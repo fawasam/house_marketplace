@@ -842,7 +842,8 @@ form{
 }
 
 .formInputFile {
-  width: 100%;
+  width: 50%;
+  margin: auto;
 }
 .formInputFile::-webkit-file-upload-button {
   background-color: #00cc66;
@@ -870,4 +871,60 @@ form{
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+
+
+.swiper{
+  z-index: 1;
+  height: 53%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain !important;
+  position: relative;
+}
+.swiperimg{
+  position: relative;
+
+  padding: 5px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+  
+}
+img{
+  
+}
+.swiperslide{
+  object-fit: cover !important;
+  
+}
+@media (max-width: 500px) {
+ 
+  .categoryListingName {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .pageHeader {
+    font-size: 3rem;
+  }
+    .swiperimg{
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+
+}
+.formInputFile {
+  width: 90%;
+  margin: auto;
+}
 }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import {getAuth , updateProfile} from 'firebase/auth'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { updateDoc ,doc } from 'firebase/firestore'
 import { db } from '../config/firebase'
 import { toast } from 'react-toastify'
-import { async } from '@firebase/util'
-
+import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg'
+import homeIcon from '../assets/svg/homeIcon.svg'
 
 const Profile = () => {
 
@@ -82,6 +82,11 @@ const Profile = () => {
             />
           </form>
         </div>
+        <Link to='/create-listings' className='createListing'>
+          <img src={homeIcon} alt="home" />
+          <p>Sell or rent your home </p>
+          <img src={arrowRight} alt="arrow right" />
+        </Link>
       </main>
     </div>
   )
